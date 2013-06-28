@@ -1,3 +1,4 @@
+package StrategyPattern;
 
 public class FlyWithWings implements FlyBehavior {
 
