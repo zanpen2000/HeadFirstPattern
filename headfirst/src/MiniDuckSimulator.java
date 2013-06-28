@@ -14,6 +14,8 @@ public class MiniDuckSimulator {
 		model.performQuack();
 		model.setFlyBehavior(new FlyRocketPowered());
 		model.performFly();
+		
+		System.out.println("done!");
 	}
 
 }
