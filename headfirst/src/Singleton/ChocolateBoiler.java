@@ -29,7 +29,7 @@ public class ChocolateBoiler {
 	// return uniqueInstance;
 	// }
 
-	// 双重检查加锁
+	// 方式3：双重检查加锁
 
 	private volatile static ChocolateBoiler uniqueInstance;
 
