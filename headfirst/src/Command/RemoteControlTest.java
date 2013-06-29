@@ -9,7 +9,7 @@ public class RemoteControlTest {
 		SimpleRemoteControl remote = new SimpleRemoteControl();
 		
 		//开灯
-		Light light = new Light();
+		Light light = new Light("");
 		LightOnCommand lightOn = new LightOnCommand(light);
 		
 		remote.setCommand(lightOn);
@@ -17,7 +17,7 @@ public class RemoteControlTest {
 		
 		//开门
 		GarageDoor garageDoor = new GarageDoor();
-		GarageDoorOpenCommand garageDoorOpen = new GarageDoorOpenCommand(garageDoor);
+		GarageDoorUpCommand garageDoorOpen = new GarageDoorUpCommand(garageDoor);
 		
 		remote.setCommand(garageDoorOpen);
 		remote.buttonWasPressed();
