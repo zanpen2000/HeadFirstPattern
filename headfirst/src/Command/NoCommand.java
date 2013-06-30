@@ -4,7 +4,11 @@ public class NoCommand implements Command {
 
 	@Override
 	public void execute() {
-		// TODO Auto-generated method stub
+		System.out.println("Do nothing...");
+	}
+
+	@Override
+	public void undo() {
 		System.out.println("Do nothing...");
 	}
 

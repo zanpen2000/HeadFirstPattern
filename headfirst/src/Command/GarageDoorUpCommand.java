@@ -2,6 +2,11 @@ package Command;
 
 public class GarageDoorUpCommand implements Command {
 
+	@Override
+	public void undo() {
+		garageDoor.down();
+	}
+
 	GarageDoor garageDoor;
 
 	public GarageDoorUpCommand(GarageDoor garageDoor) {

@@ -5,7 +5,6 @@ public class Light {
 	String desc;
 	
 	public Light(String desc) {
-		// TODO Auto-generated constructor stub
 		this.desc = desc;
 	}
 

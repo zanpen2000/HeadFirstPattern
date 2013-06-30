@@ -10,8 +10,14 @@ public class GarageDoorDownCommand implements Command {
 
 	@Override
 	public void execute() {
-		// TODO Auto-generated method stub
 		garageDoor.down();
 	}
+
+	@Override
+	public void undo() {
+		garageDoor.up();
+	}
+	
+	
 
 }

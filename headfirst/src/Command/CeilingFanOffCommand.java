@@ -1,15 +1,14 @@
 package Command;
 
-public class CeilingFanOffCommand implements Command {
-
-	CeilingFan fan;
+public class CeilingFanOffCommand extends CeilingFanFather {
 
 	public CeilingFanOffCommand(CeilingFan fan) {
-		this.fan = fan;
+		super(fan);
 	}
 
 	@Override
 	public void execute() {
+		super.execute();
 		fan.off();
 	}
 

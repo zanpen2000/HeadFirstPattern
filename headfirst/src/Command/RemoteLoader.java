@@ -3,7 +3,7 @@ package Command;
 public class RemoteLoader {
 
 	public static void main(String[] args) {
-		RemoteControl remoteControl = new RemoteControl();
+		RemoteControlWithUndo remoteControl = new RemoteControlWithUndo();
 		
 		Light livingRoomLight = new Light("Living Room");
 		Light kitchenLight = new Light("Kitchen");
@@ -16,8 +16,8 @@ public class RemoteLoader {
 		LightOnCommand kitchenRoomLightOn = new LightOnCommand(kitchenLight);
 		LightOffCommand kitchenRoomLightOff = new LightOffCommand(kitchenLight);
 		
-		CeilingFanOnCommand fanOnCommand = new CeilingFanOnCommand(ceilingFan);
-		CeilingFanOffCommand fanOffCommand = new CeilingFanOffCommand(ceilingFan);
+		CeilingFanHighCommand fanOnCommand = new CeilingFanHighCommand(ceilingFan);
+		CeilingFanMediumCommand fanOffCommand = new CeilingFanMediumCommand(ceilingFan);
 		
 		GarageDoorUpCommand doorUpCommand = new GarageDoorUpCommand(garageDoor);
 		GarageDoorDownCommand doorDownCommand = new GarageDoorDownCommand(garageDoor);
@@ -36,6 +36,7 @@ public class RemoteLoader {
 		for (int i = 0; i < 4; i++) {
 			remoteControl.onButtonWasPushed(i);
 			remoteControl.offButtonWasPushed(i);
+			remoteControl.undoButtonWasPushed();
 		}
 	}
 	
