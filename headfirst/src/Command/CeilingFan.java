@@ -16,19 +16,23 @@ public class CeilingFan {
 
 	public void high(){
 		speed = HIGH;
+		System.out.println("Ceiling Fan is high!");
 	}
 	
 	public void medium(){
 		speed = MEDIUM;
+		System.out.println("Ceiling Fan is medium!");
 	}
 	
 	public void low(){
 		speed = LOW;
+		System.out.println("Ceiling Fan is low!");
 	}
 	
 	public void off()
 	{
 		speed = OFF;
+		System.out.println("Ceiling Fan is off!");
 	}
 	
 	public int getSpeed(){

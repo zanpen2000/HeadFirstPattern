@@ -17,7 +17,4 @@ public class GarageDoorDownCommand implements Command {
 	public void undo() {
 		garageDoor.up();
 	}
-	
-	
-
 }
