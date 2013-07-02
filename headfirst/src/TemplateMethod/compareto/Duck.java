@@ -1,6 +1,6 @@
 package TemplateMethod.compareto;
 
-public class Duck implements Comparable {
+public class Duck implements Comparable<Object> {
 
 	String name;
 	int weight;
