@@ -3,12 +3,14 @@ package IteratorPattern;
 import java.nio.channels.IllegalSelectorException;
 import java.util.Iterator;
 
-public class DinerMenuIterator implements Iterator<Object> {
+import IteratorPattern.component.MenuItem;
+
+public class DinerMenuIterator implements Iterator {
 	MenuItem[] menuItems;
 	int position = 0;
 
-	public DinerMenuIterator(MenuItem[] menuItems) {
-		this.menuItems = menuItems;
+	public DinerMenuIterator(MenuItem[] menuItems2) {
+		this.menuItems = menuItems2;
 	}
 
 	@Override
