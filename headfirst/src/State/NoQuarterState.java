@@ -2,7 +2,7 @@ package State;
 
 public class NoQuarterState implements IState {
 
-	GumballMachine gumballMachine;
+	transient GumballMachine gumballMachine;
 	
 	public NoQuarterState(GumballMachine gumballMachine) {
 		this.gumballMachine = gumballMachine;

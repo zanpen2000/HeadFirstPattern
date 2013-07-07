@@ -2,8 +2,8 @@ package State;
 
 public class SoldState implements IState {
 
-	GumballMachine gumballMachine ;
-	
+	transient GumballMachine gumballMachine;
+
 	public SoldState(GumballMachine gumballMachine) {
 		this.gumballMachine = gumballMachine;
 	}
@@ -26,12 +26,9 @@ public class SoldState implements IState {
 	@Override
 	public void dispense() {
 		gumballMachine.releaseBall();
-		if (gumballMachine.getCount() > 0)
-		{
+		if (gumballMachine.getCount() > 0) {
 			gumballMachine.setState(gumballMachine.getNoQuarterState());
-		}
-		else
-		{
+		} else {
 			System.out.println("Oops, out of gumballs!");
 			gumballMachine.setState(gumballMachine.getSoldOutState());
 		}

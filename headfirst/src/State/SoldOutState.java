@@ -2,10 +2,8 @@ package State;
 
 public class SoldOutState implements IState {
 
-	GumballMachine gumballMachine ;
-	
-	
-	
+	transient GumballMachine gumballMachine;
+
 	public SoldOutState(GumballMachine gumballMachine) {
 		this.gumballMachine = gumballMachine;
 	}
